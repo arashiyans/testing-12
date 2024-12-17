@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Details</title>
+    <link rel="stylesheet" href="ticket-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ticket Options -->
+    <section class="ticket-options">
+        <div class="ticket-card standard-ticket">
+            <h3>Standard Ticket</h3>
+            <img src="red.png" alt="Standard Ticket">
+            <p>Enjoy a great view and access to the main areas of the event.</p>
+            <p><strong>$50</strong></p>
+            <button class="add-to-cart" data-ticket="Standard Ticket" data-price="50">Add to Cart</button>
+        </div>
+
+        <div class="ticket-card vip-ticket">
+            <h3>VIP Ticket</h3>
+            <img src="golden.jpg" alt="VIP Ticket">
+            <p>Get the premium experience with exclusive access and amenities.</p>
+            <p><strong>$150</strong></p>
+            <button class="add-to-cart" data-ticket="VIP Ticket" data-price="150">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be listed here -->
+        </div>
+        <button class="checkout" id="checkout-btn">Proceed to Checkout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Garuda Store. All rights reserved.</p>
+    </footer>
+
+    <script src="ticket-script.js"></script>
+</body>
+</html>

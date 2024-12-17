@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garuda Store - Your Tickets</title>
+    <link rel="stylesheet" href="css/tickets.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="logout-btn">Logout</button>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Tickets Selection Section -->
+        <section class="tickets">
+            <h2>Purchase Your Ticket</h2>
+            <form id="ticket-form">
+                <label for="ticket-type">Select Ticket Type:</label>
+                <select id="ticket-type" name="ticket-type">
+                    <option value="standard">Standard Ticket</option>
+                    <option value="vip">VIP Ticket</option>
+                </select>
+                <button type="submit">Purchase Ticket</button>
+            </form>
+        </section>
+
+        <!-- Loading and Transaction Info -->
+        <section id="loading-standard" style="display:none;">
+            <p>Loading...</p>
+        </section>
+        <section id="transaction-standard" style="display:none;">
+            <p>Transaction Successful! Ticket ID: <span class="success" id="transaction-standard-id"></span></p>
+        </section>
+
+        <section id="loading-vip" style="display:none;">
+            <p>Loading...</p>
+        </section>
+        <section id="transaction-vip" style="display:none;">
+            <p>Transaction Successful! Ticket ID: <span class="success" id="transaction-vip-id"></span></p>
+        </section>
+
+        <!-- Tickets Confirmation Section -->
+        <section class="tickets-confirmation" style="display:none;">
+            <h1>Your Ticket is Confirmed!</h1>
+            <p id="ticket-info">You have successfully purchased a <span id="ticket-type-confirmation"></span> ticket.</p>
+            <p>Thank you for your purchase! Please check your email for your e-ticket and further instructions.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Garuda Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/tickets.js"></script>
+</body>
+</html>
